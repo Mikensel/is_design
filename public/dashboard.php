@@ -14,12 +14,22 @@ $user = $_SESSION['user'];
 <header class="header">
     <h1>Bibliothèque — Dashboard</h1>
     <div class="user-info">
+        <img
+            src="<?= $user['photo']
+                ? '../uploads/' . htmlspecialchars($user['photo'])
+                : '../assets/images/avatar.png'; ?>"
+            class="avatar"
+            alt="Photo profil"
+        >
+
         <span>
             <?= htmlspecialchars($user['prenom']) ?>
             <?= htmlspecialchars($user['nom']) ?>
         </span>
+
         <a href="logout.php" class="logout">Log out</a>
     </div>
+
 </header>
 
 <main class="dashboard">
