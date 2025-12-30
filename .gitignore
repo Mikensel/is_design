@@ -1,0 +1,11 @@
+# VS Code
+.vscode/
+
+# Uploads utilisateurs
+/uploads/
+
+# Configuration sensible
+/config/database.php
+
+# Fichiers système Windows
+Thumbs.db
